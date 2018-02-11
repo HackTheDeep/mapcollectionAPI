@@ -26,7 +26,7 @@ router.get('/', function(req, res, next) {
 
     var offset = curPage * pageSize;
 
-    var query = "select * from dirtydatacsv where (CleanDateCollected <> '' and CleanDateReceived <> '') and (CleanContinent <> '' and CleanCountry <> '' and CleanDepartmentProvinceState <> '' and CleanCounty <> '')";
+    var query = "select * from dirtydatacsv where (CleanDateCollected <> '' and CleanDateReceived <> '') and (CleanContinent <> '' and CleanCountry <> '' and CleanDepartmentProvinceState <> '' and CleanCounty <> '')";// and (CleanLatitude is NULL or CleanLatitude = '') and (CleanLongitude is NULL or CleanLongitude = '')";
     if(startYear && endYear) {
         startDate = '1/1/' + startYear;
         endDate = '12/31/' + endYear;
