@@ -7,6 +7,8 @@ cd <repository>
 npm install
 node ./bin/www
 ```
+
+Duplicate the file config.js and rename it config.local.js. And provide the appropriate DB Details in the mssql and database sections. Or you can setup an Environmental Variable connection string named SQLCONNSTR_connectionParams
   
 ## Usage
 Browse to **localhost:4000/dirtydata**
